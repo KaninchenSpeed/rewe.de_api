@@ -1,9 +1,13 @@
 {
   "name": "rewe.de_api",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A unofficial library to use the rewe.de api",
   "main": "dist/cjs/main.js",
   "module": "dist/esm/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaninchenSpeed/rewe.de_api"
+  },
   "scripts": {
     "build": "tsc --module CommonJS --outDir dist/cjs && tsc --module ES2020 --outDir dist/esm",
     "buildWatch": "tsc --watch --module CommonJS --outDir dist/cjs && tsc --watch --module ES2020 --outDir dist/esm",
@@ -11,9 +15,11 @@
     "prepublishOnly": "npm run build",
     "test": "tsc -p tests/tsconfig.test.json && node tests/dist/tests/main.test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "rewe.de", "rewe", "api"
+  ],
+  "author": "KaninchenSpeed",
+  "license": "GPL-3.0",
   "devDependencies": {
     "concurrently": "^7.0.0",
     "typescript": "^4.6.3"
